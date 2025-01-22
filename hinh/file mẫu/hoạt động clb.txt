@@ -1,0 +1,20 @@
+﻿Khởi động ứng dụng là giao diện đăng nhập tài khoản
+Trưởng CLB, Phó CLB, Thành viên CLB là 1 chức năng riêng
+
+Chức năng chung của phần mềm quản lý câu lạc bộ sinh viên (Trưởng, phó CLB)
+"Đăng ký lịch(lịch sinh hoạt và các lịch khác tương ứng với CLB đó)"
+
+Chức năng riêng (Thiết kế giống như trang sinh viên)
+1. CLB Văn Nghệ:
++ Đăng ký lịch tập dượt, lịch sinh hoạt và up lên phần mềm và trên web
++ Điểm danh thành viên
++ Gửi thông báo Nhắc nhở chung và nhắc nhở riêng
++ Gửi Thông báo lịch diễn
++ Lưu trữ hình ảnh hoạt động của CLB
+2. CLB Truyền Thông:
++ Đăng ký lịch họp và up lên phần mềm và trên web
++ Điểm Danh Thành Viên
++ Gửi thông báo lịch tác nghiệp
++ Quản lý lưu trữ hình ảnh và video đã tác nghiệp
++ Gửi thông báo nhắc nhở chung và nhắc nhở riêng
+3. Các CLB khác chức năng gần tương tự

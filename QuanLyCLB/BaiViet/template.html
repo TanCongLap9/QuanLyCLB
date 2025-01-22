@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>{post.title}</title>
+    <style>
+        body { font-family: "Segoe UI", sans-serif; }
+        blockquote { border-left: 4px solid silver; padding-left: 8px; }
+        table { border-collapse: collapse; }
+        thead th { border-bottom: 1px solid black; }
+        th,td { padding-left: 8px; padding-right: 8px; padding-top: 4px; padding-bottom: 4px; }
+        tr:nth-child(even) td { background-color: #f8f8f8; }
+        hgroup h1 { margin-bottom: 0; }
+        hgroup p { margin-top: 0; }
+    </style>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+</head>
+
+<body>
+    <hgroup style="text-align: center;">
+        <h1>{post.title}</h1>
+        <p><i>Viết bởi <b>{post.author}</b>, ngày {post.date}</i></p>
+    </hgroup>
+    <hr>
+    {post.body}
+</body>
+
+</html>

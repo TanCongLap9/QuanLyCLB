@@ -1,0 +1,36 @@
+﻿Admin:
+tk1
+password
+Thành viên trong CLB văn nghệ
+
+Người dùng:
+tk2
+Indonesia
+Thành viên trong CLB CNTT và CLB thể thao
+
+Người dùng bị từ chối duyệt:
+tk7
+Poland
+
+Trưởng nhóm:
+tk4
+Peru
+Thành viên trong CLB tiếng anh
+
+Phó nhóm:
+tk13
+Russia
+Thành viên trong CLB tiếng anh
+
+Thành viên:
+tk21
+Costa Rica
+Thành viên trong CLB tiếng anh, CLB thể thao, CLB văn nghệ
+
+Tài khoản chưa tham gia CLB:
+tk9
+Philippines
+
+
+
+Pass cho menu Quản lý: abc123

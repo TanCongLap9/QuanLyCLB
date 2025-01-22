@@ -1,0 +1,628 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="arrow_left_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arrow-left-3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrow_right_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arrow-right-3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="system_settings" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\system-settings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_737963dd93d62b8872c7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\737963dd93d62b8872c7.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dialog_information_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dialog-information-3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="document_save_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\document-save-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edit_delete_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edit-delete-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edit_delete_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edit-delete-6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="view_refresh_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\view-refresh-4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="file" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\file.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="banner_v3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\banner-v3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_312206908_556418156487551_722616506666904791_n__1__removebg_preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\312206908_556418156487551_722616506666904791_n__1_-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edit_add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edit-add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="list_add_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\list-add-4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dialog_cancel_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dialog-cancel-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dialog_ok_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dialog-ok-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="insert_horizontal_rule" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\insert-horizontal-rule.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="view_split_left_right_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\view-split-left-right-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="view_split_top_bottom_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\view-split-top-bottom-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="list_remove_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\list-remove-5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edit_remove_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edit-remove-3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image_x_generic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image-x-generic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="insert_table_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\insert-table-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="insert_text_italic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\insert-text-italic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="list_remove_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\list-remove-3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="document_save_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\document-save-5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="internet_chat_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\internet-chat-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="link" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\link.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="document_properties_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\document-properties-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="accessories_text_editor_8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\accessories-text-editor-8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="file_broken" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\file-broken.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="multimedia_player_mp3player_alt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\multimedia-player-mp3player_alt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="text_x_generic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\text-x-generic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="video_x_generic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\video-x-generic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="video_x_generic_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\video-x-generic-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="zoom_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\zoom-3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="emblem_downloads" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\emblem-downloads.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="preferences_desktop_notification_bell_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\preferences-desktop-notification-bell-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chromium_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chromium-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dialog_information_3_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dialog-information-3_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="favicon_WPS_Photos_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\favicon_WPS Photos_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="go_down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\go-down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="go_up" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\go-up.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="document_save_2_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\document-save-2_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edit_rename" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edit-rename.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image_x_generic_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image-x-generic_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="audio_x_generic_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\audio-x-generic-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="color_picker" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\color-picker.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="document_properties_2_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\document-properties-2_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edit_delete_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edit-delete-5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edit_delete_5_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edit-delete-5_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="key" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\key.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edit_copy_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edit-copy-7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edit_cut_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edit-cut-5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="group" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\group.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edit_copy_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edit-copy-6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edit_copy_6_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edit-copy-6_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edit_cut_5_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edit-cut-5_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kalzium_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kalzium-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kalzium_2_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kalzium-2_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kalzium_2_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kalzium-2_64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TextValidator_TenDangNhap_LoiKyTuKhongHopLe" xml:space="preserve">
+    <value>Tên đăng nhập chỉ được chứa chữ cái không dấu, chữ số và dấu gạch dưới (_).</value>
+  </data>
+  <data name="TextValidator_TenDangNhap_LoiKyTuDauKhongHopLe" xml:space="preserve">
+    <value>Tên đăng nhập không được bắt đầu bằng số.</value>
+  </data>
+  <data name="TextValidator_TenDangNhap_LoiDoDaiKhongHopLe" xml:space="preserve">
+    <value>Tên đăng nhập gồm tối thiểu 6 ký tự.</value>
+  </data>
+  <data name="TextValidator_NgaySinh_LoiKhongHopLe" xml:space="preserve">
+    <value>Ngày sinh không phù hợp.</value>
+  </data>
+  <data name="TextValidator_XacNhanMatKhau_LoiKhongTrungKhop" xml:space="preserve">
+    <value>Mật khẩu không trùng khớp.</value>
+  </data>
+  <data name="TextValidator_Email_LoiKhongHopLe" xml:space="preserve">
+    <value>Email không hợp lệ.</value>
+  </data>
+  <data name="TextValidator_Ten_LoiKhongHopLe" xml:space="preserve">
+    <value>Vui lòng ghi đúng 1 từ vào phần tên. Nếu họ tên có 3 từ trở lên thì ghi các từ giữa vào tên lót.</value>
+  </data>
+  <data name="TextValidator_Ho_LoiKhongHopLe" xml:space="preserve">
+    <value>Vui lòng ghi đúng 1 từ vào phần họ.</value>
+  </data>
+  <data name="TextValidator_MatKhau_LoiKyTuKhongHopLe" xml:space="preserve">
+    <value>Mật khẩu phải chứa cả chữ cái, chữ số lẫn ký hiệu.</value>
+  </data>
+  <data name="TextValidator_MatKhau_LoiDoDaiKhongHopLe" xml:space="preserve">
+    <value>Mật khẩu gồm tối thiểu 10 ký tự.</value>
+  </data>
+  <data name="TextValidator_SDT_LoiKhongHopLe" xml:space="preserve">
+    <value>Số điện thoại không hợp lệ.</value>
+  </data>
+  <data name="DangKy_ThanhCong_TieuDe" xml:space="preserve">
+    <value>Đăng ký thành công</value>
+  </data>
+  <data name="DangKy_ThanhCong_NoiDung" xml:space="preserve">
+    <value>Bạn đã đăng ký tài khoản thành công!
+Hiện tại đội ngũ của chúng tôi đang tiến hành duyệt tài khoản của bạn, xin vui lòng chờ một khoảng thời gian trước khi đăng nhập bằng tài khoản của bạn.</value>
+  </data>
+  <data name="DangKy_Loi_NoiDung" xml:space="preserve">
+    <value>Có lỗi xảy ra trong quá trình đăng ký.
+Nội dung lỗi: {0}</value>
+  </data>
+  <data name="DangKy_Loi_TieuDe" xml:space="preserve">
+    <value>Lỗi đăng ký</value>
+  </data>
+  <data name="DangNhap_Loi_1" xml:space="preserve">
+    <value>Có lỗi xảy ra trong lúc đăng nhập.
+Nội dung lỗi: {0}</value>
+  </data>
+  <data name="SignInCredentialInvalid" xml:space="preserve">
+    <value>Tài khoản không tồn tại hoặc mật khẩu không đúng.</value>
+  </data>
+  <data name="edit_group" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edit-group.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="user_info_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user-info-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dialog_cancel_2_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dialog-cancel-2_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="draw_arrow_back" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\draw-arrow-back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="view_calendar_day_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\view-calendar-day-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="view_calendar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\view-calendar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="QuanLyLich_HuongDanKeoTha" xml:space="preserve">
+    <value>Giữ chuột trái và kéo vào lịch để tạo lịch hoạt động mới.</value>
+  </data>
+  <data name="QuanLyLich_Them_HoanThanh" xml:space="preserve">
+    <value>Đã thêm lịch thành công.</value>
+  </data>
+  <data name="QuanLyLich_Sua_HoanThanh" xml:space="preserve">
+    <value>Đã cập nhật lịch thành công.</value>
+  </data>
+  <data name="SuaLich_Dong_LoiDangSua_NoiDung" xml:space="preserve">
+    <value>Bạn đang trong quá trình sửa lịch. Vui lòng giải quyết công việc này trước khi đăng xuất.</value>
+  </data>
+  <data name="SuaLich_Dong_LoiDangSua_TieuDe" xml:space="preserve">
+    <value>Đang trong quá trình sửa lịch</value>
+  </data>
+  <data name="SuaLich_Ngay_Hon" xml:space="preserve">
+    <value>Nhập ngày bắt đầu trước ngày kết thúc.</value>
+  </data>
+  <data name="SuaLich_ThoiGian_Hon" xml:space="preserve">
+    <value>Nhập thời gian bắt đầu trước thời gian kết thúc.</value>
+  </data>
+  <data name="SuaLich_ThoiGian_LoiKhongHopLe" xml:space="preserve">
+    <value>Thời gian không hợp lệ.</value>
+  </data>
+  <data name="message_news" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\message-news.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="system_users_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\system-users-3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DanhSachThanhVien_SoLuongThanhVien" xml:space="preserve">
+    <value>{0} thành viên</value>
+  </data>
+  <data name="SqlOperationCancelled" xml:space="preserve">
+    <value>Operation cancelled by user.</value>
+  </data>
+  <data name="user_add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user-add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="user_delete_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user-delete-3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="user_info_2_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user-info-2_64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DangNhap_TaiKhoanChuaDuyet_NoiDung" xml:space="preserve">
+    <value>Tài khoản của bạn hiện chưa được duyệt. Vui lòng chờ thêm một khoảng thời gian.</value>
+  </data>
+  <data name="DangNhap_TaiKhoanChuaDuyet_TieuDe" xml:space="preserve">
+    <value>Tài khoản chưa được duyệt.</value>
+  </data>
+  <data name="DangNhap_TaiKhoanTuChoi_NoiDung" xml:space="preserve">
+    <value>Chúng tôi rất tiếc rằng tài khoản của bạn đã không được chấp nhận duyệt.
+Nguyên nhân là do các thông tin mà bạn cung cấp không phù hợp với yêu cầu và tiêu chuẩn của chúng tôi.</value>
+  </data>
+  <data name="DangNhap_TaiKhoanTuChoi_TieuDe" xml:space="preserve">
+    <value>Tài khoản bị từ chối duyệt.</value>
+  </data>
+  <data name="GuiThongBao_HoanThanh_NoiDung_1" xml:space="preserve">
+    <value>Đã gửi thông báo lên {0}.</value>
+  </data>
+  <data name="GuiThongBao_HoanThanh_TieuDe" xml:space="preserve">
+    <value>Gửi thông báo thành công</value>
+  </data>
+  <data name="GuiThongBao_Loi_NoiDung_1" xml:space="preserve">
+    <value>Có lỗi xảy ra trong lúc gửi thông báo.
+Nội dung lỗi: {0}</value>
+  </data>
+  <data name="GuiThongBao_Loi_TieuDe" xml:space="preserve">
+    <value>Lỗi gửi thông báo</value>
+  </data>
+  <data name="GiaoDienChinh_FormDangMo_NoiDung" xml:space="preserve">
+    <value>Vui lòng tắt hết các form khác trước khi tắt giao diện này.</value>
+  </data>
+  <data name="GiaoDienChinh_FormDangMo_TieuDe" xml:space="preserve">
+    <value>Các form đang mở</value>
+  </data>
+  <data name="ThongTinTaiKhoan_Loi_1" xml:space="preserve">
+    <value>Có lỗi xảy ra trong lúc lấy thông tin tài khoản.
+Nội dung lỗi: {0}</value>
+  </data>
+  <data name="DanhSachCauLacBo_Loi_1" xml:space="preserve">
+    <value>Có lỗi xảy ra trong lúc lấy thông tin câu lạc bộ.
+Nội dung lỗi: {0}</value>
+  </data>
+  <data name="TextValidator_Trong" xml:space="preserve">
+    <value>Vui lòng điền tất cả thông tin.</value>
+  </data>
+  <data name="XemThongBao_Loi_NoiDung_1" xml:space="preserve">
+    <value>Có lỗi xảy ra trong lúc lấy thông tin về thông báo.
+Nội dung lỗi: {0}</value>
+  </data>
+  <data name="XemThongBao_Loi_TieuDe" xml:space="preserve">
+    <value>Lỗi tải thông báo</value>
+  </data>
+  <data name="CauLacBo_Loi_NoiDung_1" xml:space="preserve">
+    <value>Có lỗi xảy ra trong lúc lấy thông tin thành viên.
+Nội dung lỗi: {0}</value>
+  </data>
+  <data name="CauLacBo_Loi_TieuDe" xml:space="preserve">
+    <value>Lỗi tải thành viên</value>
+  </data>
+  <data name="DanhSachThanhVien_XacNhanXoa_NoiDung_1" xml:space="preserve">
+    <value>Bạn có muốn xoá thành viên '{0}' ra khỏi câu lạc bộ này không?</value>
+  </data>
+  <data name="DanhSachThanhVien_XacNhanXoa_TieuDe" xml:space="preserve">
+    <value>Xoá thành viên</value>
+  </data>
+  <data name="DanhSachThanhVien_Xoa_Loi_NoiDung_1" xml:space="preserve">
+    <value>Có lỗi xảy ra trong lúc xoá thành viên.
+Nội dung lỗi: {0}</value>
+  </data>
+  <data name="DanhSachThanhVien_Xoa_Loi_TieuDe" xml:space="preserve">
+    <value>Lỗi xoá thành viên</value>
+  </data>
+  <data name="DanhSachThanhVien_ChuanBiThem_NoiDung" xml:space="preserve">
+    <value>Tìm kiếm người dùng bằng họ, tên hoặc mã số sinh viên và nhấn đúp để thêm người dùng.
+Nhấn Esc để huỷ.</value>
+  </data>
+  <data name="DanhSachThanhVien_DoiChucVu_LoiCheDoThem" xml:space="preserve">
+    <value>Không thể đổi chức vụ khi đang trong chế độ thêm thành viên.
+Nhấn Esc để thoát khỏi chế độ này.</value>
+  </data>
+  <data name="DanhSachThanhVien_DoiChucVu_Loi_NoiDung_1" xml:space="preserve">
+    <value>Có lỗi xảy ra trong lúc đổi chức vụ.
+Nội dung lỗi: {0}</value>
+  </data>
+  <data name="DanhSachThanhVien_DoiChucVu_Loi_TieuDe" xml:space="preserve">
+    <value>Lỗi đổi chức vụ</value>
+  </data>
+  <data name="DanhSachThanhVien_Them_Loi_NoiDung_1" xml:space="preserve">
+    <value>Có lỗi xảy ra trong lúc thêm thành viên.
+Nội dung lỗi: {0}</value>
+  </data>
+  <data name="DanhSachThanhVien_Them_Loi_TieuDe" xml:space="preserve">
+    <value>Lỗi thêm thành viên</value>
+  </data>
+  <data name="DanhSachThanhVien_XacNhanDoiChucVu_NoiDung_2" xml:space="preserve">
+    <value>Bạn có muốn đổi chức vụ của thành viên '{0}' thành '{1}' không?</value>
+  </data>
+  <data name="DanhSachThanhVien_XacNhanDoiChucVu_TieuDe" xml:space="preserve">
+    <value>Đổi chức vụ</value>
+  </data>
+  <data name="DanhSachThanhVien_XacNhanThem_NoiDung_1" xml:space="preserve">
+    <value>Bạn có muốn thêm người dùng '{0}' vào câu lạc bộ này không?</value>
+  </data>
+  <data name="DanhSachThanhVien_XacNhanThem_TieuDe" xml:space="preserve">
+    <value>Thêm thành viên</value>
+  </data>
+  <data name="DanhSachThanhVien_Xoa_LoiCheDoThem" xml:space="preserve">
+    <value>Không thể xoá thành viên khi đang trong chế độ thêm thành viên.
+Nhấn Esc để thoát khỏi chế độ này.</value>
+  </data>
+  <data name="GiaoDienChinh_Loi_NoiDung_1" xml:space="preserve">
+    <value>Có lỗi xảy ra trong giao diện chính.
+Nội dung lỗi: {0}</value>
+  </data>
+  <data name="GiaoDienChinh_Loi_TieuDe" xml:space="preserve">
+    <value>Lỗi giao diện chính</value>
+  </data>
+  <data name="DanhSachThanhVien_Them_LoiTrungKhop_NoiDung_1" xml:space="preserve">
+    <value>Không thể thêm người dùng '{0}' vì đã là thành viên trong câu lạc bộ này.</value>
+  </data>
+  <data name="DanhSachThanhVien_Them_LoiTrungKhop_TieuDe" xml:space="preserve">
+    <value>Người dùng đã là thành viên</value>
+  </data>
+  <data name="QuanLyLich_GuiThongBao_Loi_1" xml:space="preserve">
+    <value>Đã cập nhật lịch nhưng không thể gửi thông báo về lịch.
+Nội dung lỗi: {0}</value>
+  </data>
+  <data name="QuanLyLich_Loi_1" xml:space="preserve">
+    <value>Có lỗi xảy ra trong quá trình lấy thông tin lịch.
+Nội dung lỗi: {0}</value>
+  </data>
+  <data name="QuanLyLich_Sua_Loi_1" xml:space="preserve">
+    <value>Có lỗi xảy ra trong quá trình sửa lịch.
+Nội dung lỗi: {0}</value>
+  </data>
+  <data name="QuanLyLich_TaiLaiSauCapNhat_Loi_1" xml:space="preserve">
+    <value>Đã cập nhật lịch nhưng không thể tải lại lịch.
+Nội dung lỗi: {0}</value>
+  </data>
+  <data name="QuanLyLich_Them_Loi_1" xml:space="preserve">
+    <value>Có lỗi xảy ra trong quá trình thêm lịch.
+Nội dung lỗi: {0}</value>
+  </data>
+  <data name="QuanLyLich_ThongBao_Sua_TieuDe_1" xml:space="preserve">
+    <value>Lịch sửa đổi: {0}</value>
+  </data>
+  <data name="QuanLyLich_ThongBao_Them_NoiDung_7" xml:space="preserve">
+    <value>Kính gửi: Tất cả các thành viên trong câu lạc bộ {0},
+
+Tôi xin thông báo về lịch hoạt động mới vừa được thêm vào trong câu lạc bộ {0}.
+
+Cụ thể:
+- Chủ đề: {1}
+- Địa điểm: {2}
+- Ngày bắt đầu: {4}
+- Thời gian: {5} - {6}
+- Nội dung:
+{3}
+
+Hãy chú ý theo dõi để không bỏ lỡ cơ hội tham gia và trải nghiệm những hoạt động thú vị này!
+
+
+Xin chân thành cảm ơn.</value>
+  </data>
+  <data name="QuanLyLich_ThongBao_Them_TieuDe_1" xml:space="preserve">
+    <value>Lịch mới: {0}</value>
+  </data>
+  <data name="QuanLyLich_ThongBao_Xoa_TieuDe_1" xml:space="preserve">
+    <value>Lịch đã xoá: {0}</value>
+  </data>
+  <data name="QuanLyLich_Xoa_HoanThanh" xml:space="preserve">
+    <value>Đã xoá lịch thành công.</value>
+  </data>
+  <data name="QuanLyLich_Xoa_Loi_1" xml:space="preserve">
+    <value>Có lỗi xảy ra trong quá trình xoá lịch.
+Nội dung lỗi: {0}</value>
+  </data>
+  <data name="SuaLich_XacNhanXoa_NoiDung_1" xml:space="preserve">
+    <value>Bạn có muốn xoá lịch '{0}' không?</value>
+  </data>
+  <data name="SuaLich_XacNhanXoa_TieuDe" xml:space="preserve">
+    <value>Xoá lịch</value>
+  </data>
+  <data name="QuanLyLich_ThongBao_Sua_NoiDung_8" xml:space="preserve">
+    <value>Kính gửi: Tất cả các thành viên trong câu lạc bộ {0},
+
+Tôi xin thông báo về việc sửa đổi lịch hoạt động '{1}' trong câu lạc bộ {0}.
+Cụ thể:
+- Chủ đề: {2}
+- Địa điểm: {3}
+- Ngày bắt đầu: {5}
+- Thời gian: {6} - {7}
+- Nội dung:
+{4}
+
+Hãy chú ý theo dõi để không bỏ lỡ cơ hội tham gia và trải nghiệm những hoạt động thú vị này!
+
+Xin chân thành cảm ơn.</value>
+  </data>
+  <data name="QuanLyLich_ThongBao_Xoa_NoiDung_2" xml:space="preserve">
+    <value>Kính gửi: Tất cả các thành viên trong câu lạc bộ {0},
+
+Tôi xin thông báo về việc xoá lịch hoạt động '{1}' khỏi câu lạc bộ {0}.
+
+Hãy chú ý theo dõi để không bỏ lỡ cơ hội tham gia và trải nghiệm những hoạt động thú vị này!
+
+
+Xin chân thành cảm ơn.</value>
+  </data>
+</root>

@@ -1,0 +1,996 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\CefSharp.Common.109.1.110\build\CefSharp.Common.props" Condition="Exists('..\packages\CefSharp.Common.109.1.110\build\CefSharp.Common.props')" />
+  <Import Project="..\packages\cef.redist.x86.109.1.11\build\cef.redist.x86.props" Condition="Exists('..\packages\cef.redist.x86.109.1.11\build\cef.redist.x86.props')" />
+  <Import Project="..\packages\cef.redist.x64.109.1.11\build\cef.redist.x64.props" Condition="Exists('..\packages\cef.redist.x64.109.1.11\build\cef.redist.x64.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E5155629-E977-4FE8-AFD9-0FFF36A4571A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QuanLyCLB</RootNamespace>
+    <AssemblyName>QuanLyCLB</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>kalzium-2.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CefSharp, Version=109.1.110.0, Culture=neutral, PublicKeyToken=40c4b6fc221f4138, processorArchitecture=MSIL">
+      <HintPath>..\packages\CefSharp.Common.109.1.110\lib\net452\CefSharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CefSharp.Core, Version=109.1.110.0, Culture=neutral, PublicKeyToken=40c4b6fc221f4138, processorArchitecture=MSIL">
+      <HintPath>..\packages\CefSharp.Common.109.1.110\lib\net452\CefSharp.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CefSharp.WinForms, Version=109.1.110.0, Culture=neutral, PublicKeyToken=40c4b6fc221f4138, processorArchitecture=MSIL">
+      <HintPath>..\packages\CefSharp.WinForms.109.1.110\lib\net452\CefSharp.WinForms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ColorCode.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=51464a653cf063b3, processorArchitecture=MSIL">
+      <HintPath>..\packages\ColorCode.Core.2.0.15\lib\netstandard2.0\ColorCode.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="ColorCode.HTML, Version=2.0.0.0, Culture=neutral, PublicKeyToken=51464a653cf063b3, processorArchitecture=MSIL">
+      <HintPath>..\packages\ColorCode.HTML.2.0.15\lib\netstandard2.0\ColorCode.HTML.dll</HintPath>
+    </Reference>
+    <Reference Include="LibVLCSharp, Version=3.9.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LibVLCSharp.3.9.0\lib\net40\LibVLCSharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="LibVLCSharp.WinForms, Version=3.9.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LibVLCSharp.WinForms.3.9.0\lib\net40\LibVLCSharp.WinForms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Markdig, Version=0.37.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Markdig.0.37.0\lib\netstandard2.0\Markdig.dll</HintPath>
+    </Reference>
+    <Reference Include="Markdown.ColorCode, Version=2.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Markdown.ColorCode.2.3.0\lib\netstandard2.0\Markdown.ColorCode.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks, Version=1.0.12.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions, Version=1.0.12.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.Extensions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions.Desktop, Version=1.0.168.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.Extensions.Desktop.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="netstandard, Version=2.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="ReaLTaiizor, Version=3.7.8.5, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ReaLTaiizor.3.7.8.5\lib\net461\ReaLTaiizor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net461\System.ValueTuple.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaiViet\Loader.cs" />
+    <Compile Include="Commands\AsyncProgressCommand.cs" />
+    <Compile Include="Console\Console.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Console\Console.Designer.cs">
+      <DependentUpon>Console.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Console\CauLacBo.cs" />
+    <Compile Include="Console\HelpItem.cs" />
+    <Compile Include="Console\Lich.cs" />
+    <Compile Include="Console\LoaiLich.cs" />
+    <Compile Include="Console\DuongLinkCauLacBo.cs" />
+    <Compile Include="Console\NguoiDung.cs" />
+    <Compile Include="Console\ThanhVien.cs" />
+    <Compile Include="Commands\AsyncIterCommand1.cs" />
+    <Compile Include="Commands\BaiViet\DanhSachBaiViet.cs" />
+    <Compile Include="Commands\BaiViet\SuaBaiViet.cs" />
+    <Compile Include="Commands\BaiViet\ThemBaiViet.cs" />
+    <Compile Include="Commands\BaiViet\ThongTinBaiViet.cs" />
+    <Compile Include="Commands\CauLacBo\DanhSachCauLacBo.cs" />
+    <Compile Include="Commands\CauLacBo\SuaCauLacBo.cs" />
+    <Compile Include="Commands\CauLacBo\ThemCauLacBo.cs" />
+    <Compile Include="Commands\CauLacBo\TimKiemCauLacBo.cs" />
+    <Compile Include="Commands\CauLacBo\XoaCauLacBo.cs" />
+    <Compile Include="Commands\AsyncCommand1.cs" />
+    <Compile Include="Commands\CauLacBo\ThongTinCauLacBo.cs" />
+    <Compile Include="Commands\DuongLinkCauLacBo\DanhSachDuongLinkCLB.cs" />
+    <Compile Include="Commands\DuongLinkCauLacBo\SuaDuongLinkCLB.cs" />
+    <Compile Include="Commands\DuongLinkCauLacBo\ThemDuongLinkCLB.cs" />
+    <Compile Include="Commands\DuongLinkCauLacBo\XoaDuongLinkCLB.cs" />
+    <Compile Include="Commands\Lich\DanhSachLich.cs" />
+    <Compile Include="Commands\Lich\SuaLich.cs" />
+    <Compile Include="Commands\Lich\ThemLich.cs" />
+    <Compile Include="Commands\Lich\XoaLich.cs" />
+    <Compile Include="Commands\LoaiLich\DanhSachLoaiLich.cs" />
+    <Compile Include="Commands\LoaiLich\SuaLoaiLich.cs" />
+    <Compile Include="Commands\LoaiLich\ThemLoaiLich.cs" />
+    <Compile Include="Commands\LoaiLich\XoaLoaiLich.cs" />
+    <Compile Include="Commands\NguoiDung\DangNhapNguoiDung.cs" />
+    <Compile Include="Commands\NguoiDung\ThongTinNguoiDung.cs" />
+    <Compile Include="Commands\TapTin\ThongTinTapTin.cs" />
+    <Compile Include="Commands\NguoiDung\TimKiemNguoiDung.cs" />
+    <Compile Include="Commands\NguoiDung\SuaNguoiDung.cs" />
+    <Compile Include="Commands\NguoiDung\ThemNguoiDung.cs" />
+    <Compile Include="Commands\NguoiDung\XoaNguoiDung.cs" />
+    <Compile Include="Commands\ThanhVien\ThongTinThanhVien.cs" />
+    <Compile Include="Commands\ThanhVien\DanhSachThanhVien.cs" />
+    <Compile Include="Commands\ThanhVien\SuaThanhVien.cs" />
+    <Compile Include="Commands\ThanhVien\ThemThanhVien.cs" />
+    <Compile Include="Commands\ThanhVien\XoaThanhVien.cs" />
+    <Compile Include="Commands\ThongBao\DanhSachThongBao.cs" />
+    <Compile Include="Commands\ThongBao\ThemThongBao.cs" />
+    <Compile Include="Commands\ThongBao\ThongTinThongBao.cs" />
+    <Compile Include="Commands\ThuMuc\DanhSachThuMuc.cs" />
+    <Compile Include="Commands\ThuMuc\SuaThuMuc.cs" />
+    <Compile Include="Commands\SoanBaiViet\AlignText.cs" />
+    <Compile Include="BaiViet\ChenBang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BaiViet\ChenBang.designer.cs">
+      <DependentUpon>ChenBang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaiViet\ChinhBaiViet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BaiViet\ChinhBaiViet.Designer.cs">
+      <DependentUpon>ChinhBaiViet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Commands\SoanBaiViet\BulletedList.cs" />
+    <Compile Include="Commands\SoanBaiViet\Cite.cs" />
+    <Compile Include="Commands\SoanBaiViet\Code.cs" />
+    <Compile Include="Commands\SoanBaiViet\Enter.cs" />
+    <Compile Include="Commands\SoanBaiViet\Heading.cs" />
+    <Compile Include="Commands\SoanBaiViet\Link.cs" />
+    <Compile Include="Commands\SoanBaiViet\NumberedList.cs" />
+    <Compile Include="Commands\SoanBaiViet\HRule.cs" />
+    <Compile Include="Commands\SoanBaiViet\Image.cs" />
+    <Compile Include="Commands\SoanBaiViet\Redo.cs" />
+    <Compile Include="Commands\SoanBaiViet\ShiftEnter.cs" />
+    <Compile Include="Commands\SoanBaiViet\Tab.cs" />
+    <Compile Include="Commands\SoanBaiViet\Table.cs" />
+    <Compile Include="Commands\SoanBaiViet\FormatText.cs" />
+    <Compile Include="Commands\SoanBaiViet\Command.cs" />
+    <Compile Include="Commands\SoanBaiViet\Undo.cs" />
+    <Compile Include="Commands\SoanBaiViet\Untab.cs" />
+    <Compile Include="BaiViet\Previewer.cs" />
+    <Compile Include="Commands\TapTin\DanhSachTapTin.cs" />
+    <Compile Include="Commands\TapTin\TaiLen.cs" />
+    <Compile Include="Commands\TapTin\TaiVe.cs" />
+    <Compile Include="Commands\ThuMuc\ThemThuMuc.cs" />
+    <Compile Include="Commands\ThuMuc\XoaThuMuc.cs" />
+    <Compile Include="Commands\MyFault.cs" />
+    <Compile Include="Commands\TapTin\XoaTapTin.cs" />
+    <Compile Include="Commands\TapTin\SaoChepTapTin.cs" />
+    <Compile Include="Commands\TapTin\DoiTenTapTin.cs" />
+    <Compile Include="Commands\TapTin\DiChuyenTapTin.cs" />
+    <Compile Include="Commands\AsyncCommand.cs" />
+    <Compile Include="DangKy\CacAvatar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DangKy\CacAvatar.Designer.cs">
+      <DependentUpon>CacAvatar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EventArgs\IOnThemeChanged.cs" />
+    <Compile Include="Lich\HanhDongSuaLich.cs" />
+    <Compile Include="LuuTru\CacChucNangLuuTru.cs" />
+    <Compile Include="LuuTru\CheDoChonThuMuc.cs" />
+    <Compile Include="LuuTru\DanhSachTapTin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LuuTru\DanhSachTapTin.Designer.cs">
+      <DependentUpon>DanhSachTapTin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LuuTru\DanhSachThuMuc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LuuTru\DanhSachThuMuc.Designer.cs">
+      <DependentUpon>DanhSachThuMuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ThanhVienModel.cs" />
+    <Compile Include="Properties\DangKyRes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DangKyRes.resx</DependentUpon>
+    </Compile>
+    <Compile Include="TaskWindow\Item.cs" />
+    <Compile Include="TaskWindow\TinhTrang.cs" />
+    <Compile Include="ThongBao\DanhSachThongBao.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ThongBao\DanhSachThongBao.Designer.cs">
+      <DependentUpon>DanhSachThongBao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrinhDoc\CacDinhDangTapTinDuocHoTroBoiTrinhDoc.cs" />
+    <Compile Include="TrinhDoc\LoaiTrinhDoc.cs" />
+    <Compile Include="Properties\LuuTruRes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LuuTruRes.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Schemes\SoanBaiVietHandlerFactory.cs" />
+    <Compile Include="BaiViet\SoanBaiViet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaiViet\SoanBaiViet.designer.cs">
+      <DependentUpon>SoanBaiViet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaiViet\TextBoxHistory.cs" />
+    <Compile Include="BaiViet\DanhSachBaiViet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BaiViet\DanhSachBaiViet.Designer.cs">
+      <DependentUpon>DanhSachBaiViet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoverPictureBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CoverPictureBox.Designer.cs">
+      <DependentUpon>CoverPictureBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DangKy\DangKyPresenter.cs" />
+    <Compile Include="DangKy\IDangKyView.cs" />
+    <Compile Include="TaskWindow\UploadMultipleWindow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TaskWindow\UploadMultipleWindow.Designer.cs">
+      <DependentUpon>UploadMultipleWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EventArgs\SuaLichEventArgs.cs" />
+    <Compile Include="EventArgs\LichEventArgs.cs" />
+    <Compile Include="EventArgs\LoaiLichEventArgs.cs" />
+    <Compile Include="GiaoDienChinh\DanhSachCauLacBo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GiaoDienChinh\DanhSachCauLacBo.Designer.cs">
+      <DependentUpon>DanhSachCauLacBo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiaoDienChinh\ThongTinUngDung.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GiaoDienChinh\ThongTinUngDung.Designer.cs">
+      <DependentUpon>ThongTinUngDung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lich\CacThu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Lich\CacThu.Designer.cs">
+      <DependentUpon>CacThu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lich\LoaiLichItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Lich\LoaiLichItem.Designer.cs">
+      <DependentUpon>LoaiLichItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CauLacBoModel.cs" />
+    <Compile Include="Models\DangNhapModel.cs" />
+    <Compile Include="Models\DuongLinkCLBModel.cs" />
+    <Compile Include="Models\LoaiLichModel.cs" />
+    <Compile Include="Properties\BaiVietRes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BaiVietRes.resx</DependentUpon>
+    </Compile>
+    <Compile Include="DangKy\DangKy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DangKy\DangKy.designer.cs">
+      <DependentUpon>DangKy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DangNhap\DangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DangNhap\DangNhap.designer.cs">
+      <DependentUpon>DangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lich\Gio.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Lich\Gio.Designer.cs">
+      <DependentUpon>Gio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lich\Lich.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Lich\Lich.Designer.cs">
+      <DependentUpon>Lich.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lich\LichItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Lich\LichItem.Designer.cs">
+      <DependentUpon>LichItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LuuTru\AlertBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LuuTru\AlertBox.Designer.cs">
+      <DependentUpon>AlertBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LuuTru\FolderItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LuuTru\FolderItem.Designer.cs">
+      <DependentUpon>FolderItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LuuTru\ThemSuaThuMuc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LuuTru\ThemSuaThuMuc.Designer.cs">
+      <DependentUpon>ThemSuaThuMuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exif\ConversionConstants.cs" />
+    <Compile Include="Exif\PropertyItemType.cs" />
+    <Compile Include="Exif\ExifTag.cs" />
+    <Compile Include="Exif\RawDataArrayConverter.cs" />
+    <Compile Include="Exif\Rational.cs" />
+    <Compile Include="Models\BaiVietModel.cs" />
+    <Compile Include="Models\ThuMucModel.cs" />
+    <Compile Include="Models\ThongBaoModel.cs" />
+    <Compile Include="GiaoDienChinh\ThongTinTaiKhoan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GiaoDienChinh\ThongTinTaiKhoan.Designer.cs">
+      <DependentUpon>ThongTinTaiKhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlDep.cs" />
+    <Compile Include="DangNhap\DangNhapPresenter.cs" />
+    <Compile Include="DangNhap\IDangNhapView.cs" />
+    <Compile Include="TaskWindow\ThongBaoMoi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TaskWindow\ThongBaoMoi.Designer.cs">
+      <DependentUpon>ThongBaoMoi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiaoDienChinh\GiaoDienChinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiaoDienChinh\GiaoDienChinh.Designer.cs">
+      <DependentUpon>GiaoDienChinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LuuTru\FileItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LuuTru\FileItem.Designer.cs">
+      <DependentUpon>FileItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LuuTru\LuuTru.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LuuTru\LuuTru.Designer.cs">
+      <DependentUpon>LuuTru.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TapTinModel.cs" />
+    <Compile Include="Models\Model.cs" />
+    <Compile Include="Models\LichModel.cs" />
+    <Compile Include="Lich\SuaLich.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Lich\SuaLich.Designer.cs">
+      <DependentUpon>SuaLich.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CauLacBo\CauLacBo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CauLacBo\CauLacBo.Designer.cs">
+      <DependentUpon>CauLacBo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lich\QuanLyLich.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Lich\QuanLyLich.designer.cs">
+      <DependentUpon>QuanLyLich.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\NguoiDungModel.cs" />
+    <Compile Include="CauLacBo\DanhSachThanhVien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CauLacBo\DanhSachThanhVien.Designer.cs">
+      <DependentUpon>DanhSachThanhVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CauLacBo\ThongTinCLB.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CauLacBo\ThongTinCLB.Designer.cs">
+      <DependentUpon>ThongTinCLB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EventArgs\ThuMucEventArgs.cs" />
+    <Compile Include="EventArgs\TapTinEventArgs.cs" />
+    <Compile Include="LuuTru\ThongTinFile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LuuTru\ThongTinFile.Designer.cs">
+      <DependentUpon>ThongTinFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrinhDoc\ChonTrinhDoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrinhDoc\ChonTrinhDoc.Designer.cs">
+      <DependentUpon>ChonTrinhDoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Schemes\LuuTruHandlerFactory.cs" />
+    <Compile Include="Exif\PropertyItemReader.cs" />
+    <Compile Include="TrinhDoc\TrinhDuyet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TrinhDoc\TrinhDuyet.Designer.cs">
+      <DependentUpon>TrinhDuyet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LuuTru\MucThongTin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LuuTru\MucThongTin.Designer.cs">
+      <DependentUpon>MucThongTin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LuuTru\TieuDeThongTin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LuuTru\TieuDeThongTin.Designer.cs">
+      <DependentUpon>TieuDeThongTin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrinhDoc\GiaoDienTrinhDoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrinhDoc\GiaoDienTrinhDoc.Designer.cs">
+      <DependentUpon>GiaoDienTrinhDoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrinhDoc\TrinhDoc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TrinhDoc\TrinhDoc.Designer.cs">
+      <DependentUpon>TrinhDoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrinhDoc\TrinhDocHinhAnh.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TrinhDoc\TrinhDocHinhAnh.Designer.cs">
+      <DependentUpon>TrinhDocHinhAnh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrinhDoc\TrinhDocVanBan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TrinhDoc\TrinhDocVanBan.Designer.cs">
+      <DependentUpon>TrinhDocVanBan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrinhDoc\TrinhDocVideo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TrinhDoc\TrinhDocVideo.Designer.cs">
+      <DependentUpon>TrinhDocVideo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThongBao\XemThongBao.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ThongBao\XemThongBao.Designer.cs">
+      <DependentUpon>XemThongBao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThongBao\GuiThongBao.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ThongBao\GuiThongBao.Designer.cs">
+      <DependentUpon>GuiThongBao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TuyChinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TuyChinh.Designer.cs">
+      <DependentUpon>TuyChinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FileStream2.cs" />
+    <Compile Include="Utils\ColorUtils.cs" />
+    <Compile Include="Utils\DateTimeExtensions.cs" />
+    <Compile Include="Utils\DateUtils.cs" />
+    <Compile Include="Utils\IDGenerator.cs" />
+    <Compile Include="Utils\InitUtils.cs" />
+    <Compile Include="Utils\PasswordUtils.cs" />
+    <Compile Include="Utils\StringUtils.cs" />
+    <Compile Include="Utils\SqlUtils.cs" />
+    <Compile Include="Utils\TaskWindowUtils.cs" />
+    <Compile Include="Utils\TextValidator.cs" />
+    <Compile Include="Utils\ImageUtils.cs" />
+    <Compile Include="Utils\TimeSpanExtensions.cs" />
+    <Compile Include="Utils\StringExtensions.cs" />
+    <Compile Include="BaiViet\XemBaiViet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaiViet\XemBaiViet.Designer.cs">
+      <DependentUpon>XemBaiViet.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BaiViet\ChenBang.resx">
+      <DependentUpon>ChenBang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaiViet\ChinhBaiViet.resx">
+      <DependentUpon>ChinhBaiViet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaiViet\SoanBaiViet.resx">
+      <DependentUpon>SoanBaiViet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Console\Console.resx">
+      <DependentUpon>Console.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaiViet\DanhSachBaiViet.resx">
+      <DependentUpon>DanhSachBaiViet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoverPictureBox.resx">
+      <DependentUpon>CoverPictureBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DangKy\CacAvatar.resx">
+      <DependentUpon>CacAvatar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DangKy\DangKy.resx">
+      <DependentUpon>DangKy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DangNhap\DangNhap.resx">
+      <DependentUpon>DangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiaoDienChinh\DanhSachCauLacBo.resx">
+      <DependentUpon>DanhSachCauLacBo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiaoDienChinh\ThongTinUngDung.resx">
+      <DependentUpon>ThongTinUngDung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lich\CacThu.resx">
+      <DependentUpon>CacThu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lich\LoaiLichItem.resx">
+      <DependentUpon>LoaiLichItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LuuTru\DanhSachTapTin.resx">
+      <DependentUpon>DanhSachTapTin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LuuTru\DanhSachThuMuc.resx">
+      <DependentUpon>DanhSachThuMuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\BaiVietRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>BaiVietRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\DangKyRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>DangKyRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\LuuTruRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>LuuTruRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lich\Gio.resx">
+      <DependentUpon>Gio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lich\Lich.resx">
+      <DependentUpon>Lich.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lich\LichItem.resx">
+      <DependentUpon>LichItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LuuTru\AlertBox.resx">
+      <DependentUpon>AlertBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LuuTru\FolderItem.resx">
+      <DependentUpon>FolderItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LuuTru\ThemSuaThuMuc.resx">
+      <DependentUpon>ThemSuaThuMuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiaoDienChinh\ThongTinTaiKhoan.resx">
+      <DependentUpon>ThongTinTaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaskWindow\ThongBaoMoi.resx">
+      <DependentUpon>ThongBaoMoi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CauLacBo\CauLacBo.resx">
+      <DependentUpon>CauLacBo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiaoDienChinh\GiaoDienChinh.resx">
+      <DependentUpon>GiaoDienChinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lich\QuanLyLich.resx">
+      <DependentUpon>QuanLyLich.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LuuTru\FileItem.resx">
+      <DependentUpon>FileItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LuuTru\LuuTru.resx">
+      <DependentUpon>LuuTru.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CauLacBo\DanhSachThanhVien.resx">
+      <DependentUpon>DanhSachThanhVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CauLacBo\ThongTinCLB.resx">
+      <DependentUpon>ThongTinCLB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongBao\DanhSachThongBao.resx">
+      <DependentUpon>DanhSachThongBao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrinhDoc\ChonTrinhDoc.resx">
+      <DependentUpon>ChonTrinhDoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LuuTru\ThongTinFile.resx">
+      <DependentUpon>ThongTinFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrinhDoc\TrinhDuyet.resx">
+      <DependentUpon>TrinhDuyet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LuuTru\MucThongTin.resx">
+      <DependentUpon>MucThongTin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LuuTru\TieuDeThongTin.resx">
+      <DependentUpon>TieuDeThongTin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrinhDoc\GiaoDienTrinhDoc.resx">
+      <DependentUpon>GiaoDienTrinhDoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrinhDoc\TrinhDoc.resx">
+      <DependentUpon>TrinhDoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrinhDoc\TrinhDocHinhAnh.resx">
+      <DependentUpon>TrinhDocHinhAnh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrinhDoc\TrinhDocVanBan.resx">
+      <DependentUpon>TrinhDocVanBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrinhDoc\TrinhDocVideo.resx">
+      <DependentUpon>TrinhDocVideo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lich\SuaLich.resx">
+      <DependentUpon>SuaLich.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaskWindow\UploadMultipleWindow.resx">
+      <DependentUpon>UploadMultipleWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongBao\XemThongBao.resx">
+      <DependentUpon>XemThongBao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongBao\GuiThongBao.resx">
+      <DependentUpon>GuiThongBao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TuyChinh.resx">
+      <DependentUpon>TuyChinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaiViet\XemBaiViet.resx">
+      <DependentUpon>XemBaiViet.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BaiViet\template.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\0c82fb72d66bd68a7175ac12a95267fc.jpg" />
+    <None Include="Resources\1-day-left-the-art-has-been-completed-v0-dorae3yhjqhb1.png" />
+    <None Include="Resources\24a114a24c53f8621973001609780c1d.jpg" />
+    <None Include="Resources\2369348.jpg" />
+    <Content Include="kalzium-2.ico" />
+    <Content Include="Resources\312206908_556418156487551_722616506666904791_n__1_-removebg-preview.png" />
+    <None Include="Resources\71f498fd-0f80-49a0-ad28-37723482b2e9.png" />
+    <None Include="Resources\6130d6bfabd4aacf519596e56e7f19a2.jpg" />
+    <None Include="Resources\453331936_875905254573689_1153484546346153521_n.jpg" />
+    <None Include="Resources\5Mou7T.png" />
+    <None Include="Resources\312206908_556418156487551_722616506666904791_n__1_-removebg-preview_64.png" />
+    <None Include="Resources\45-gps_ifd.jpg" />
+    <Content Include="Resources\737963dd93d62b8872c7.jpg" />
+    <None Include="Resources\file-broken.png" />
+    <None Include="Resources\emblem-downloads.png" />
+    <None Include="Resources\go-down.png" />
+    <None Include="Resources\go-up.png" />
+    <None Include="Resources\preferences-desktop-notification-bell-2.png" />
+    <None Include="Resources\chromium-2.png" />
+    <None Include="Resources\dialog-information-3_16.png" />
+    <None Include="Resources\edit-rename.png" />
+    <None Include="Resources\document-save-2_16.png" />
+    <None Include="Resources\image-x-generic_16.png" />
+    <None Include="Resources\audio-x-generic-2.png" />
+    <None Include="Resources\color-picker.png" />
+    <None Include="Resources\folder_64.png" />
+    <None Include="Resources\folder-open-3.png" />
+    <None Include="Resources\lock-5.png" />
+    <None Include="Resources\key.png" />
+    <None Include="Resources\edit-delete-5_16.png" />
+    <None Include="Resources\edit-delete-5.png" />
+    <None Include="Resources\list-add-4_16.png" />
+    <None Include="Resources\document-properties-2_16.png" />
+    <None Include="Resources\folder-forbidden_16.png" />
+    <None Include="Resources\folder-new-5_16.png" />
+    <None Include="Resources\folder-new-5.png" />
+    <None Include="Resources\folder-forbidden.png" />
+    <None Include="Resources\edit-copy-7.png" />
+    <None Include="Resources\edit-cut-5.png" />
+    <None Include="Resources\group.png" />
+    <None Include="Resources\edit-cut-5_24.png" />
+    <None Include="Resources\edit-copy-6.png" />
+    <None Include="Resources\edit-copy-6_24.png" />
+    <None Include="Resources\view-list-details-4.png" />
+    <None Include="Resources\view-list-icons.png" />
+    <None Include="Resources\edit-group.png" />
+    <None Include="Resources\dialog-cancel-2_24.png" />
+    <None Include="Resources\audio-volume-high1.png" />
+    <None Include="Resources\audio-volume-low1.png" />
+    <None Include="Resources\audio-volume-medium1.png" />
+    <None Include="Resources\audio-volume-muted1.png" />
+    <None Include="Resources\folder1.png" />
+    <None Include="Resources\folder_641.png" />
+    <None Include="Resources\folder-forbidden1.png" />
+    <None Include="Resources\folder-forbidden_161.png" />
+    <None Include="Resources\folder-new-51.png" />
+    <None Include="Resources\folder-new-5_161.png" />
+    <None Include="Resources\folder-open-31.png" />
+    <None Include="Resources\format-list-ordered1.png" />
+    <None Include="Resources\format-list-unordered1.png" />
+    <None Include="Resources\format-text-align-center1.png" />
+    <None Include="Resources\format-text-align-justify1.png" />
+    <None Include="Resources\format-text-align-left1.png" />
+    <None Include="Resources\format-text-align-right1.png" />
+    <None Include="Resources\format-text-allcaps1.png" />
+    <None Include="Resources\format-text-bold-51.png" />
+    <None Include="Resources\format-text-smallcaps1.png" />
+    <None Include="Resources\format-text-strikethrough-41.png" />
+    <None Include="Resources\format-text-subscript-31.png" />
+    <None Include="Resources\format-text-superscript-31.png" />
+    <None Include="Resources\format-text-underline-51.png" />
+    <None Include="Resources\image-x-generic_161.png" />
+    <None Include="Resources\insert-horizontal-rule1.png" />
+    <None Include="Resources\insert-table-21.png" />
+    <None Include="Resources\insert-text-italic1.png" />
+    <None Include="Resources\draw-arrow-back.png" />
+    <None Include="Resources\font.png" />
+    <None Include="Resources\edit-undo-8.png" />
+    <None Include="Resources\edit-redo-8.png" />
+    <None Include="Resources\edit-cut-51.png" />
+    <None Include="Resources\edit-copy-71.png" />
+    <None Include="Resources\document-properties-2_161.png" />
+    <None Include="Resources\document-save-5_16.png" />
+    <None Include="Resources\7bc8054221d49d132153e370540df101.jpg" />
+    <None Include="Resources\abe5cc2c67875c042ef463e97b75d9085f45a9fc.jpg" />
+    <None Include="Resources\anh-thien-nhien-que-huong-viet-nam-2.jpg" />
+    <None Include="Resources\artworks-ebqbJNoRi9lD4ySF-49rsMw-t500x500.jpg" />
+    <None Include="Resources\bhv3qshp667c1.png" />
+    <None Include="Resources\CapeCod_RalphLauren_sm.png" />
+    <None Include="Resources\CO-RU-QUOC-TANG2_A.jpg" />
+    <None Include="Resources\channels4_profile.jpg" />
+    <None Include="Resources\Doge-meme-2-1024x614-1.png" />
+    <None Include="Resources\efe46c2c0917dd944c6476a2085958c1.jpg" />
+    <None Include="Resources\file-1681191213441.jpg" />
+    <None Include="Resources\k46acawjk97.png" />
+    <None Include="Resources\746d77ef9b49afd5ec2306d39592d01e.png" />
+    <None Include="Resources\Chrysanthemum.jpg" />
+    <None Include="Resources\Desert.jpg" />
+    <None Include="Resources\hoa-sne-1-1708701680.jpg" />
+    <None Include="Resources\images.jpg" />
+    <None Include="Resources\edit-paste-4.png" />
+    <Content Include="Resources\kalzium-2.png" />
+    <Content Include="Resources\kalzium-2_24.png" />
+    <Content Include="Resources\kalzium-2_64.png" />
+    <None Include="Resources\user-info-2.png" />
+    <None Include="Resources\pause_16dp_5f6368_fill1_wght400_grad0_opsz201.png" />
+    <None Include="Resources\play_arrow_16dp_5f6368_fill1_wght400_grad0_opsz201.png" />
+    <None Include="Resources\skip_next_16dp_5f6368_fill1_wght400_grad0_opsz201.png" />
+    <None Include="Resources\skip_previous_16dp_5f6368_fill1_wght400_grad0_opsz201.png" />
+    <None Include="Resources\speed_16dp_5f6368_fill1_wght400_grad0_opsz201.png" />
+    <None Include="Resources\stop_16dp_5f6368_fill1_wght400_grad0_opsz201.png" />
+    <None Include="Resources\kdb_table1.png" />
+    <None Include="Resources\script1.png" />
+    <None Include="Resources\view-calendar-day-2.png" />
+    <None Include="Resources\view-calendar.png" />
+    <None Include="Resources\message-news.png" />
+    <None Include="Resources\system-users.png" />
+    <None Include="Resources\system-users-2.png" />
+    <None Include="Resources\system-users-3.png" />
+    <None Include="Resources\view-split-left-right-2_16.png" />
+    <None Include="Resources\view-split-top-bottom-2_16.png" />
+    <None Include="Resources\user-add.png" />
+    <None Include="Resources\user-delete-3.png" />
+    <None Include="Resources\la-co-viet-nam-1.jpg" />
+    <None Include="Resources\olli-the-polite-cat.jpg" />
+    <None Include="Resources\smudge-the-viral-cat.png" />
+    <None Include="Resources\tho-7-mau-1-2-0.jpg" />
+    <None Include="Resources\Untitled-design.png" />
+    <None Include="Resources\user-info-2_64.png" />
+    <Content Include="Resources\x-office-document.png" />
+    <None Include="Resources\X0IbYPbaSGySJPJdNWg1pw.png" />
+    <Content Include="Resources\zoom-3.png" />
+    <Content Include="Resources\accessories-text-editor-8.png" />
+    <None Include="Resources\arrow-left-3.png" />
+    <None Include="Resources\arrow-right-3.png" />
+    <Content Include="Resources\audio-volume-high.png" />
+    <Content Include="Resources\audio-volume-low.png" />
+    <Content Include="Resources\audio-volume-medium.png" />
+    <Content Include="Resources\audio-volume-muted.png" />
+    <Content Include="Resources\banner-v3.png" />
+    <None Include="Resources\dialog-cancel-2.png" />
+    <Content Include="Resources\dialog-information-3.png" />
+    <Content Include="Resources\dialog-ok-2.png" />
+    <None Include="Resources\document-properties-2.png" />
+    <Content Include="Resources\document-save-2.png" />
+    <Content Include="Resources\document-save-3.png" />
+    <None Include="Resources\document-save-5.png" />
+    <Content Include="Resources\download.png" />
+    <None Include="Resources\edit-add-2.png" />
+    <Content Include="Resources\edit-add.png" />
+    <Content Include="Resources\edit-delete-2.png" />
+    <Content Include="Resources\edit-delete-6.png" />
+    <None Include="Resources\edit-remove-3.png" />
+    <Content Include="Resources\favicon_WPS Photos_3.png" />
+    <Content Include="Resources\file.png" />
+    <None Include="Resources\folder-image.png" />
+    <Content Include="Resources\folder.png" />
+    <None Include="Resources\format-list-ordered.png" />
+    <None Include="Resources\format-list-unordered.png" />
+    <None Include="Resources\format-text-bold-5.png" />
+    <None Include="Resources\format-text-align-left.png" />
+    <None Include="Resources\format-text-align-center.png" />
+    <None Include="Resources\format-text-align-right.png" />
+    <None Include="Resources\format-text-align-justify.png" />
+    <None Include="Resources\format-text-allcaps.png" />
+    <None Include="Resources\format-text-strikethrough-4.png" />
+    <None Include="Resources\format-text-subscript-3.png" />
+    <None Include="Resources\format-text-underline-5.png" />
+    <None Include="Resources\format-text-superscript-3.png" />
+    <None Include="Resources\format-text-smallcaps.png" />
+    <None Include="Resources\image-x-generic.png" />
+    <None Include="Resources\images-x-generic.png" />
+    <None Include="Resources\image.png" />
+    <Content Include="Resources\insert-horizontal-rule.png" />
+    <None Include="Resources\insert-image-2.png" />
+    <Content Include="Resources\insert-image-3.png" />
+    <None Include="Resources\insert-table-2.png" />
+    <None Include="Resources\insert-text-italic.png" />
+    <None Include="Resources\internet-chat.png" />
+    <None Include="Resources\internet-chat-2.png" />
+    <None Include="Resources\internet-group-chat.png" />
+    <None Include="Resources\internet-chat-3.png" />
+    <None Include="Resources\kdb_table.png" />
+    <None Include="Resources\link.png" />
+    <None Include="Resources\list-add-4.png" />
+    <None Include="Resources\list-remove-3.png" />
+    <None Include="Resources\list-remove-5.png" />
+    <Content Include="Resources\multimedia-player-5.png" />
+    <Content Include="Resources\multimedia-player-mp3player_alt.png" />
+    <Content Include="Resources\pause_16dp_5F6368_FILL1_wght400_GRAD0_opsz20.png" />
+    <None Include="Resources\script.png" />
+    <Content Include="Resources\play_arrow_16dp_5F6368_FILL1_wght400_GRAD0_opsz20.png" />
+    <Content Include="Resources\skip_next_16dp_5F6368_FILL1_wght400_GRAD0_opsz20.png" />
+    <Content Include="Resources\skip_previous_16dp_5F6368_FILL1_wght400_GRAD0_opsz20.png" />
+    <Content Include="Resources\speed_16dp_5F6368_FILL1_wght400_GRAD0_opsz20.png" />
+    <Content Include="Resources\stop_16dp_5F6368_FILL1_wght400_GRAD0_opsz20.png" />
+    <Content Include="Resources\system-settings.png" />
+    <None Include="Resources\table-add.png" />
+    <Content Include="Resources\text-x-generic.png" />
+    <Content Include="Resources\video-x-generic-2.png" />
+    <Content Include="Resources\video-x-generic.png" />
+    <Content Include="Resources\view-refresh-4.png" />
+    <Content Include="Resources\view-split-left-right-2.png" />
+    <Content Include="Resources\view-split-top-bottom-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\VideoLAN.LibVLC.Windows.3.0.21\build\VideoLAN.LibVLC.Windows.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\VideoLAN.LibVLC.Windows.3.0.21\build\VideoLAN.LibVLC.Windows.targets'))" />
+    <Error Condition="!Exists('..\packages\cef.redist.x64.109.1.11\build\cef.redist.x64.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\cef.redist.x64.109.1.11\build\cef.redist.x64.props'))" />
+    <Error Condition="!Exists('..\packages\cef.redist.x86.109.1.11\build\cef.redist.x86.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\cef.redist.x86.109.1.11\build\cef.redist.x86.props'))" />
+    <Error Condition="!Exists('..\packages\CefSharp.Common.109.1.110\build\CefSharp.Common.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\CefSharp.Common.109.1.110\build\CefSharp.Common.props'))" />
+    <Error Condition="!Exists('..\packages\CefSharp.Common.109.1.110\build\CefSharp.Common.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\CefSharp.Common.109.1.110\build\CefSharp.Common.targets'))" />
+  </Target>
+  <Import Project="..\packages\VideoLAN.LibVLC.Windows.3.0.21\build\VideoLAN.LibVLC.Windows.targets" Condition="Exists('..\packages\VideoLAN.LibVLC.Windows.3.0.21\build\VideoLAN.LibVLC.Windows.targets')" />
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />
+  <Target Name="EnsureBclBuildImported" BeforeTargets="BeforeBuild" Condition="'$(BclBuildImported)' == ''">
+    <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=317567." HelpKeyword="BCLBUILD2001" />
+    <Error Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="The build restored NuGet packages. Build the project again to include these packages in the build. For more information, see http://go.microsoft.com/fwlink/?LinkID=317568." HelpKeyword="BCLBUILD2002" />
+  </Target>
+  <Import Project="..\packages\CefSharp.Common.109.1.110\build\CefSharp.Common.targets" Condition="Exists('..\packages\CefSharp.Common.109.1.110\build\CefSharp.Common.targets')" />
+</Project>

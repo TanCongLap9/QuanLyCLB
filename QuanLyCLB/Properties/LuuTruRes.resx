@@ -1,0 +1,506 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="audio_volume_high" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\audio-volume-high1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="audio_volume_low" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\audio-volume-low1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="audio_volume_medium" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\audio-volume-medium1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="audio_volume_muted" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\audio-volume-muted1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="folder1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\folder1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="folder_641" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\folder_641.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="folder_forbidden" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\folder-forbidden1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="folder_forbidden_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\folder-forbidden_161.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="folder_new_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\folder-new-51.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="folder_new_5_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\folder-new-5_161.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="folder_open_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\folder-open-31.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="view_list_details_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\view-list-details-4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="view_list_icons" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\view-list-icons.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pause_16dp_5f6368_fill1_wght400_grad0_opsz201" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pause_16dp_5f6368_fill1_wght400_grad0_opsz201.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="play_arrow_16dp_5f6368_fill1_wght400_grad0_opsz201" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\play_arrow_16dp_5f6368_fill1_wght400_grad0_opsz201.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="skip_next_16dp_5f6368_fill1_wght400_grad0_opsz201" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\skip_next_16dp_5f6368_fill1_wght400_grad0_opsz201.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="skip_previous_16dp_5f6368_fill1_wght400_grad0_opsz201" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\skip_previous_16dp_5f6368_fill1_wght400_grad0_opsz201.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="speed_16dp_5f6368_fill1_wght400_grad0_opsz201" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\speed_16dp_5f6368_fill1_wght400_grad0_opsz201.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="stop_16dp_5f6368_fill1_wght400_grad0_opsz201" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\stop_16dp_5f6368_fill1_wght400_grad0_opsz201.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TapTin_Xoa_XacNhanMot_NoiDung_1" xml:space="preserve">
+    <value>Bạn có chắc chắn muốn xoá tập tin '{0}' không?
+Bạn sẽ không thể khôi phục sau khi xoá!</value>
+  </data>
+  <data name="TapTin_Xoa_XacNhan_TieuDe" xml:space="preserve">
+    <value>Xoá tập tin</value>
+  </data>
+  <data name="TapTin_Xoa_XacNhanNhieu_NoiDung_1" xml:space="preserve">
+    <value>Bạn có chắc chắn muốn xoá {0} tập tin đã chọn không?
+Bạn sẽ không thể khôi phục sau khi xoá!</value>
+  </data>
+  <data name="TapTin_DoiTen_HoanThanh_2" xml:space="preserve">
+    <value>Đã đổi tên tập tin '{0}' thành '{1}'.</value>
+  </data>
+  <data name="TapTin_DoiTen_LoiTenChuaKyHieu" xml:space="preserve">
+    <value>Vui lòng đặt tên không chứa các ký hiệu sau:
+\  /  :  *  ?  "  &lt;  &gt;  |</value>
+  </data>
+  <data name="TapTin_DoiTen_Loi_1" xml:space="preserve">
+    <value>Không thể đổi tên tập tin.
+Nội dung lỗi: {0}</value>
+  </data>
+  <data name="TapTin_Xoa_LoiChon0" xml:space="preserve">
+    <value>Chọn tập tin cần xoá trước tiên.</value>
+  </data>
+  <data name="TapTin_DoiTen_LoiChon0" xml:space="preserve">
+    <value>Cần chọn tập tin trước khi đổi tên.</value>
+  </data>
+  <data name="TapTin_DoiTen_LoiChonNhieu" xml:space="preserve">
+    <value>Chỉ chọn 1 tập tin để đổi tên.</value>
+  </data>
+  <data name="TapTin_Mo_LoiChonNhieu_NoiDung" xml:space="preserve">
+    <value>Chỉ chọn 1 tập tin để xem trước.</value>
+  </data>
+  <data name="TapTin_Xoa_HoanThanh_2" xml:space="preserve">
+    <value>Đã xoá {0}/{1} tập tin.</value>
+  </data>
+  <data name="DanhSachTapTin_Chon0" xml:space="preserve">
+    <value>Chọn thư mục cần duyệt.</value>
+  </data>
+  <data name="DanhSachTapTin_Trong" xml:space="preserve">
+    <value>Thư mục trống.</value>
+  </data>
+  <data name="DanhSachTapTin_Duyet_Loi_1" xml:space="preserve">
+    <value>Có lỗi xảy ra trong lúc duyệt các tập tin.
+Nội dung lỗi: {0}</value>
+  </data>
+  <data name="TapTin_DiChuyen_LoiChon0" xml:space="preserve">
+    <value>Chọn tập tin cần di chuyển trước tiên.</value>
+  </data>
+  <data name="DanhSachTapTin_ThaDeTaiLen" xml:space="preserve">
+    <value>Thả vào đây để tải tập tin lên.</value>
+  </data>
+  <data name="TapTin_DiChuyen_HoanThanh_3" xml:space="preserve">
+    <value>Đã di chuyển {0}/{1} file vào thư mục '{2}'.</value>
+  </data>
+  <data name="TapTin_SaoChep_HoanThanh_3" xml:space="preserve">
+    <value>Đã sao chép {0}/{1} tập tin vào thư mục '{2}'.</value>
+  </data>
+  <data name="TapTin_SaoChep_LoiChon0" xml:space="preserve">
+    <value>Chọn tập tin cần sao chép trước tiên.</value>
+  </data>
+  <data name="TapTin_Mo_LoiChon0" xml:space="preserve">
+    <value>Chọn tập tin cần mở.</value>
+  </data>
+  <data name="TapTin_TaiLen_Huy_NoiDung" xml:space="preserve">
+    <value>Đã huỷ tải file lên.</value>
+  </data>
+  <data name="TapTin_TaiLen_Huy_TieuDe" xml:space="preserve">
+    <value>Huỷ tải lên</value>
+  </data>
+  <data name="TapTin_TaiLen_LoiKhongTimThay" xml:space="preserve">
+    <value>Tập tin không tồn tại.</value>
+  </data>
+  <data name="TapTin_TaiLen_Loi_NoiDung_1" xml:space="preserve">
+    <value>Có lỗi xảy ra trong lúc tải tập tin lên.
+Nội dung lỗi: {0}</value>
+  </data>
+  <data name="TapTin_TaiLen_Loi_TieuDe" xml:space="preserve">
+    <value>Lỗi tải lên</value>
+  </data>
+  <data name="TapTin_TaiLen_DangTaiLen" xml:space="preserve">
+    <value>Đang tải lên</value>
+  </data>
+  <data name="TapTin_TaiLen_LoiChon0" xml:space="preserve">
+    <value>Kéo thả 1 hoặc nhiều tập tin vào để tải lên.</value>
+  </data>
+  <data name="TapTin_TaiLenTaiXuongNhieu_TinhTrang_DangCho" xml:space="preserve">
+    <value>Đang chờ</value>
+  </data>
+  <data name="TapTin_TaiLenTaiXuongNhieu_TinhTrang_DangTaiLen" xml:space="preserve">
+    <value>Đang tải lên</value>
+  </data>
+  <data name="TapTin_TaiLenTaiXuongNhieu_TinhTrang_DangTaiVe" xml:space="preserve">
+    <value>Đang tải về</value>
+  </data>
+  <data name="TapTin_TaiLenTaiXuongNhieu_TinhTrang_HoanThanh" xml:space="preserve">
+    <value>Hoàn thành</value>
+  </data>
+  <data name="TapTin_TaiLenTaiXuongNhieu_TinhTrang_Loi_1" xml:space="preserve">
+    <value>Lỗi: {0}</value>
+  </data>
+  <data name="TapTin_TaiLenTaiXuongNhieu_TinhTrang_Huy" xml:space="preserve">
+    <value>Đã huỷ</value>
+  </data>
+  <data name="TapTin_TaiLen_HoanThanh" xml:space="preserve">
+    <value>Đã tải lên xong.</value>
+  </data>
+  <data name="DanhSachTapTin_DiChuyen_ChuanBi" xml:space="preserve">
+    <value>Chọn thư mục cần di chuyển các tập tin đến đó.
+Nhấn nút Esc để huỷ thao tác.</value>
+  </data>
+  <data name="DanhSachTapTin_SaoChep_ChuanBi" xml:space="preserve">
+    <value>Chọn thư mục cần sao chép các tập tin đến đó.
+Nhấn nút Esc để huỷ thao tác.</value>
+  </data>
+  <data name="TapTin_DiChuyen_LoiCungThuMuc" xml:space="preserve">
+    <value>Không thể di chuyển các tập tin vào cùng thư mục.</value>
+  </data>
+  <data name="TapTin_TaiVe_DangTaiVe" xml:space="preserve">
+    <value>Đang tải về</value>
+  </data>
+  <data name="TapTin_TaiVe_HoanThanh" xml:space="preserve">
+    <value>Đã tải về xong.</value>
+  </data>
+  <data name="TapTin_TaiVe_Huy_NoiDung" xml:space="preserve">
+    <value>Đã huỷ tải tập tin về</value>
+  </data>
+  <data name="TapTin_TaiVe_Huy_TieuDe" xml:space="preserve">
+    <value>Huỷ tải về</value>
+  </data>
+  <data name="TapTin_TaiVe_LoiChon0" xml:space="preserve">
+    <value>Chọn tập tin cần tải về trước tiên.</value>
+  </data>
+  <data name="TapTin_TaiVe_LoiKhongTimThay" xml:space="preserve">
+    <value>Tập tin không tồn tại.</value>
+  </data>
+  <data name="TapTin_TaiVe_Loi_NoiDung_1" xml:space="preserve">
+    <value>Có lỗi xảy ra trong lúc tải tập tin về.
+Nội dung lỗi: {0}</value>
+  </data>
+  <data name="TapTin_TaiVe_Loi_TieuDe" xml:space="preserve">
+    <value>Lỗi tải về</value>
+  </data>
+  <data name="ThuMuc_SuaDoi_HoanThanh" xml:space="preserve">
+    <value>Sửa thư mục thành công.</value>
+  </data>
+  <data name="ThuMuc_Them_HoanThanh" xml:space="preserve">
+    <value>Tạo thư mục thành công.</value>
+  </data>
+  <data name="ThuMuc_Xoa_HoanThanh_1" xml:space="preserve">
+    <value>Đã xoá thư mục '{0}'.</value>
+  </data>
+  <data name="ThuMuc_Xoa_LoiChon0" xml:space="preserve">
+    <value>Chọn thư mục cần xoá trước tiên.</value>
+  </data>
+  <data name="ThuMuc_Xoa_LoiKhongTimThay" xml:space="preserve">
+    <value>Không thể tìm thấy thư mục cần xoá.</value>
+  </data>
+  <data name="ThuMuc_Xoa_LoiThuMucGoc_1" xml:space="preserve">
+    <value>Thư mục '{0}' là thư mục gốc và không thể xoá.</value>
+  </data>
+  <data name="ThuMuc_Xoa_Loi_1" xml:space="preserve">
+    <value>Không thể xoá thư mục.
+Nội dung lỗi: {0}</value>
+  </data>
+  <data name="ThuMuc_Xoa_XacNhanKhongTrong_NoiDung_1" xml:space="preserve">
+    <value>Thư mục này có chứa tập tin.
+Bạn có chắc muốn xoá thư mục này và di chuyển tất cả các tập tin về thư mục gốc ({0})?</value>
+  </data>
+  <data name="ThuMuc_Xoa_XacNhan_NoiDung" xml:space="preserve">
+    <value>Bạn có chắc muốn xoá thư mục này?</value>
+  </data>
+  <data name="ThuMuc_Xoa_XacNhan_TieuDe" xml:space="preserve">
+    <value>Xoá thư mục</value>
+  </data>
+  <data name="DanhSachThuMuc_Duyet_Loi_1" xml:space="preserve">
+    <value>Có lỗi xảy ra trong lúc duyệt các thư mục.
+Nội dung lỗi: {0}</value>
+  </data>
+  <data name="ThuMuc_SuaDoi_LoiChon0" xml:space="preserve">
+    <value>Chọn thư mục cần sửa đổi trước tiên.</value>
+  </data>
+  <data name="ThuMuc_Them_ThuMucMoi" xml:space="preserve">
+    <value>Thư mục mới</value>
+  </data>
+  <data name="ThuMuc_SuaDoi_Loi_1" xml:space="preserve">
+    <value>Không thể sửa thư mục.
+Nội dung lỗi: {0}</value>
+  </data>
+  <data name="ThuMuc_Them_Loi_1" xml:space="preserve">
+    <value>Không thể tạo thư mục.
+Mô tả lỗi: {0}</value>
+  </data>
+  <data name="TapTin_TaiLen_LoiKhongChonThuMuc" xml:space="preserve">
+    <value>Chọn thư mục cần tải lên trước tiên.</value>
+  </data>
+  <data name="TapTin_Mo_LoiKhongTimThay" xml:space="preserve">
+    <value>Không thể tìm thấy tập tin cần mở.</value>
+  </data>
+  <data name="ThuMuc_Sua_TieuDe" xml:space="preserve">
+    <value>Sửa thư mục</value>
+  </data>
+  <data name="ThuMuc_ThemSua_LoiKhongTen" xml:space="preserve">
+    <value>Điền tên thư mục.</value>
+  </data>
+  <data name="ThuMuc_Them_TieuDe" xml:space="preserve">
+    <value>Tạo thư mục</value>
+  </data>
+  <data name="ThuMuc_ThemSua_LoiTenChuaKyHieu" xml:space="preserve">
+    <value>Vui lòng đặt tên không chứa các ký hiệu sau:
+\  /  :  *  ?  "  &lt;  &gt;  |</value>
+  </data>
+  <data name="TrinhDoc_Loi_KhongTonTai_NoiDung" xml:space="preserve">
+    <value>Tập tin không tồn tại.</value>
+  </data>
+  <data name="TrinhDoc_Loi_KhongTonTai_TieuDe" xml:space="preserve">
+    <value>Tập tin không tồn tại</value>
+  </data>
+  <data name="TrinhDoc_Loi_NoiDung_1" xml:space="preserve">
+    <value>Có lỗi xảy ra trong lúc lấy tập tin.
+Nội dung lỗi: {0}</value>
+  </data>
+  <data name="TrinhDoc_Loi_TieuDe" xml:space="preserve">
+    <value>Lỗi tải tập tin</value>
+  </data>
+  <data name="TrinhDocHinhAnh_DinhDangPixel_TieuDe" xml:space="preserve">
+    <value>Định dạng pixel</value>
+  </data>
+  <data name="TrinhDocHinhAnh_KichThuoc_TieuDe" xml:space="preserve">
+    <value>Kích thước</value>
+  </data>
+  <data name="TrinhDocHinhAnh_TieuDe" xml:space="preserve">
+    <value>Hình ảnh</value>
+  </data>
+  <data name="TrinhDocVideo_Metadata_Actors" xml:space="preserve">
+    <value>Các diễn viên</value>
+  </data>
+  <data name="TrinhDocVideo_Metadata_Album" xml:space="preserve">
+    <value>Album</value>
+  </data>
+  <data name="TrinhDocVideo_Metadata_AlbumArtist" xml:space="preserve">
+    <value>Tác giả album</value>
+  </data>
+  <data name="TrinhDocVideo_Metadata_Artist" xml:space="preserve">
+    <value>Tác giả</value>
+  </data>
+  <data name="TrinhDocVideo_Metadata_ArtworkURL" xml:space="preserve">
+    <value>Hình album</value>
+  </data>
+  <data name="TrinhDocVideo_Metadata_Copyright" xml:space="preserve">
+    <value>Bản quyền</value>
+  </data>
+  <data name="TrinhDocVideo_Metadata_Date" xml:space="preserve">
+    <value>Ngày</value>
+  </data>
+  <data name="TrinhDocVideo_Metadata_Description" xml:space="preserve">
+    <value>Mô tả</value>
+  </data>
+  <data name="TrinhDocVideo_Metadata_Director" xml:space="preserve">
+    <value>Đạo diễn</value>
+  </data>
+  <data name="TrinhDocVideo_Metadata_DiscNumber" xml:space="preserve">
+    <value>Số đĩa</value>
+  </data>
+  <data name="TrinhDocVideo_Metadata_DiscTotal" xml:space="preserve">
+    <value>Tổng số đĩa</value>
+  </data>
+  <data name="TrinhDocVideo_Metadata_EncodedBy" xml:space="preserve">
+    <value>Mã hoá bằng</value>
+  </data>
+  <data name="TrinhDocVideo_Metadata_Episode" xml:space="preserve">
+    <value>Tập</value>
+  </data>
+  <data name="TrinhDocVideo_Metadata_Genre" xml:space="preserve">
+    <value>Thể loại nhạc</value>
+  </data>
+  <data name="TrinhDocVideo_Metadata_Language" xml:space="preserve">
+    <value>Ngôn ngữ</value>
+  </data>
+  <data name="TrinhDocVideo_Metadata_NowPlaying" xml:space="preserve">
+    <value>Hiện đang phát</value>
+  </data>
+  <data name="TrinhDocVideo_Metadata_Publisher" xml:space="preserve">
+    <value>Nhà xuất bản</value>
+  </data>
+  <data name="TrinhDocVideo_Metadata_Rating" xml:space="preserve">
+    <value>Đánh giá</value>
+  </data>
+  <data name="TrinhDocVideo_Metadata_Season" xml:space="preserve">
+    <value>Mùa</value>
+  </data>
+  <data name="TrinhDocVideo_Metadata_Setting" xml:space="preserve">
+    <value>Tuỳ chỉnh</value>
+  </data>
+  <data name="TrinhDocVideo_Metadata_ShowName" xml:space="preserve">
+    <value>Tên chương trình</value>
+  </data>
+  <data name="TrinhDocVideo_Metadata_Title" xml:space="preserve">
+    <value>Tiêu đề</value>
+  </data>
+  <data name="TrinhDocVideo_Metadata_TrackID" xml:space="preserve">
+    <value>Mã nhạc</value>
+  </data>
+  <data name="TrinhDocVideo_Metadata_TrackNumber" xml:space="preserve">
+    <value>Số nhạc</value>
+  </data>
+  <data name="TrinhDocVideo_Metadata_TrackTotal" xml:space="preserve">
+    <value>Tổng số nhạc</value>
+  </data>
+  <data name="TrinhDocVideo_Metadata_URL" xml:space="preserve">
+    <value>Địa chỉ web</value>
+  </data>
+  <data name="TrinhDocVideo_ThoiLuong_TieuDe" xml:space="preserve">
+    <value>Thời lượng</value>
+  </data>
+  <data name="TrinhDocVideo_TieuDe_Audio" xml:space="preserve">
+    <value>Âm thanh</value>
+  </data>
+  <data name="TrinhDocVideo_TieuDe_Video" xml:space="preserve">
+    <value>Video</value>
+  </data>
+  <data name="TrinhDocHinhAnh_KinhThuoc_NoiDung_2" xml:space="preserve">
+    <value>{0} x {1}</value>
+  </data>
+  <data name="GiaoDienTrinhDoc_TaiVe_Loi_TieuDe" xml:space="preserve">
+    <value>Lỗi tải về</value>
+  </data>
+</root>

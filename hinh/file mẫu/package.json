@@ -1,0 +1,61 @@
+{
+  "_from": "zingmp3-api",
+  "_id": "zingmp3-api@1.0.10",
+  "_inBundle": false,
+  "_integrity": "sha512-UHmyzdVtzzfkJqaob9Bd3zKIQ8TBz2yezB3APuyERH7Ux72mA5imO1sfoU1bitb9dFnmsLZGOFBS8J8dhlJdmg==",
+  "_location": "/zingmp3-api",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "zingmp3-api",
+    "name": "zingmp3-api",
+    "escapedName": "zingmp3-api",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/zingmp3-api/-/zingmp3-api-1.0.10.tgz",
+  "_shasum": "69433d7138f1684f59acee49e140e971168e5c00",
+  "_spec": "zingmp3-api",
+  "_where": "D:\\zmp3",
+  "author": {
+    "name": "whoant",
+    "email": "vovanhoangtuan4.2@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/whoant/ZingMp3API/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6",
+    "tough-cookie-file-store": "^2.0.2"
+  },
+  "deprecated": false,
+  "description": "ZingMp3 API",
+  "homepage": "https://github.com/whoant/ZingMp3API#readme",
+  "keywords": [
+    "ZingMp3",
+    "zingmp3",
+    "zing",
+    "mp3",
+    "api-music",
+    "music"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "name": "zingmp3-api",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whoant/ZingMp3API.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.10"
+}

@@ -1,0 +1,54 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="QuanLyCLB.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ConnectionString" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Data Source = localhost;Initial Catalog = QuanLyCLB;Integrated Security = True</Value>
+    </Setting>
+    <Setting Name="DownloadsPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">%homedrive%%homepath%\Downloads</Value>
+    </Setting>
+    <Setting Name="AskDownloadsPath" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="TenDangNhap" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="NhoTenDangNhap" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="TenPhanMem" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Phần mềm quản lý câu lạc bộ sinh viên</Value>
+    </Setting>
+    <Setting Name="PhienBan" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">2.5.8</Value>
+    </Setting>
+    <Setting Name="PhienBanCefSharp" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">109.1.110</Value>
+    </Setting>
+    <Setting Name="PhienBanLibVLCSharp" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">3.9.0</Value>
+    </Setting>
+    <Setting Name="PhienBanNetFramework" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">4.6.1</Value>
+    </Setting>
+    <Setting Name="PhienBanReaLTaiizor" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">3.7.8.5</Value>
+    </Setting>
+    <Setting Name="PhienBanMarkdig" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">0.30.4</Value>
+    </Setting>
+    <Setting Name="PhienBanVideoLANLibVLC" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">3.0.21</Value>
+    </Setting>
+    <Setting Name="Style" Type="ReaLTaiizor.Enum.Poison.ColorStyle" Scope="User">
+      <Value Profile="(Default)">Blue</Value>
+    </Setting>
+    <Setting Name="Theme" Type="ReaLTaiizor.Enum.Poison.ThemeStyle" Scope="User">
+      <Value Profile="(Default)">Light</Value>
+    </Setting>
+    <Setting Name="MaBaoMatQuanLy" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">c18f3e0599590d1f028ac69563d25c03f83f3a4981afab4a040a0137c4f9fb78</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

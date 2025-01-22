@@ -1,0 +1,32 @@
+﻿Dưới đây là một số đoạn văn mẫu bạn có thể thực hành định dạng.
+
+Các ý chính về bài thuyết trình:
+Sự gia tăng năng suất
+Sự tiết kiệm chi phí
+Sự hợp tác cải thiện
+
+Xếp hạng các thí sinh đạt điểm cao nhất trong kỳ thi:
+Nguyễn Văn A - 100 điểm
+Trần Văn B - 90 điểm
+Nguyễn Văn C - 80 điểm
+
+Sự phản ứng giữa axit với bazo tạo ra muối, được gọi là phản ứng trung hoà.
+Ví dụ: H2SO4 + Ba(OH)2 -> BaSO4 + H2O
+
+Hãy giải phương trình sau đây:
+y = f(x) = x2+2x-4=0
+delta = 2^2-4.2.(-4)
+delta = 36
+...
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  </head>
+  <body>
+    <p>Hello world</p>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.35325.158
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuanLyCLB", "QuanLyCLB\QuanLyCLB.csproj", "{E5155629-E977-4FE8-AFD9-0FFF36A4571A}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "QuanLyCLBSetup", "QuanLyCLBSetup\QuanLyCLBSetup.vdproj", "{4CDA625B-E080-4AA3-B2FA-FAF55418C75E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E5155629-E977-4FE8-AFD9-0FFF36A4571A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5155629-E977-4FE8-AFD9-0FFF36A4571A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5155629-E977-4FE8-AFD9-0FFF36A4571A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5155629-E977-4FE8-AFD9-0FFF36A4571A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CDA625B-E080-4AA3-B2FA-FAF55418C75E}.Debug|Any CPU.ActiveCfg = Debug
+		{4CDA625B-E080-4AA3-B2FA-FAF55418C75E}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {28561170-3129-4BFB-9695-A4EF4D1BBC3D}
+	EndGlobalSection
+EndGlobal
